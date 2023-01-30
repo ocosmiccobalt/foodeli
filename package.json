@@ -1,0 +1,10 @@
+{
+  "name": "foodeli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Food Delivery Page",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
