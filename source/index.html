@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodeli</title>
+    <meta name="description" content="Foodeli Means Food Delivery: Claim Best Offer on Fast Food & Restaurants">
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="wrapper page-header__wrapper">
+        <a class="page-header__logo logo logo--header" href="#">
+          <img class="logo__image" src="img/logo-group.svg" width="152" height="45" fetchpriority="high" alt="Foodeli logo.">
+        </a>
+
+        <nav class="main-nav" aria-label="Primary">
+          <button class="main-nav__toggle main-nav__toggle--nojs" type="button" aria-controls="site-list" aria-label="Open"></button>
+          <ul class="site-list site-list--nojs" id="site-list" role="list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="#why">Why Foodeli?</a>
+            </li>
+
+            <li class="site-list__item dropdown">
+              <!--
+                Replace link with button programmatically:
+                <button class="dropdown__title" type="button" aria-controls="services-dropdown" aria-expanded="false">
+                  Services
+                </button>
+              -->
+              <a class="dropdown__title" href="#services" data-aria-controls="services-dropdown">
+                Services
+              </a>
+              <ul class="dropdown__list dropdown__list--nojs" id="services-dropdown" role="list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#order-page-content">Order</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#delivery-page-content">Delivery</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#quality-page-content">Quality</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="site-list__item dropdown">
+              <!-- Replace with button. See above -->
+              <a class="dropdown__title" href="#menu" data-aria-controls="menu-dropdown">
+                Menu
+              </a>
+              <ul class="dropdown__list dropdown__list--nojs" id="menu-dropdown" role="list">
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#burger-page-content">Burger</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#pizza-page-content">Pizza</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#cupcake-page-content">Cupcake</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#ramen-page-content">Ramen</a>
+                </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link" href="#ice-cream-page-content">Ice Cream</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="site-list__item">
+              <a class="site-list__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="page-header__user-tools">
+          <form class="search" action="#" method="get" role="search">
+            <label class="search__label" for="search-field">
+              <span class="visually-hidden">Search Foodeli</span>
+            </label>
+            <input class="search__input" type="search" id="search-field" name="q" value="" placeholder="Search">
+            <button class="search__button" type="submit" aria-label="Search">
+              <svg class="search__icon" width="22" height="22" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+
+          <!--
+            Replace with this:
+            <button class="button button--alt button--cart" type="button" data-a11y-dialog-show="cart-dialog">
+              ...
+            </button>
+          -->
+          <a class="button button--alt button--cart" href="#cart-page-content" data-a11y-dialog-show="cart-dialog">
+            <span class="visually-hidden">Open the Cart</span>
+            <span class="button__amount">
+              <span class="visually-hidden">Amount of Items:</span>
+              <span class="button__number">4</span>
+            </span>
+            <svg class="button__icon button__icon--cart" width="20" height="22" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+          </a>
+
+          <!--
+            Replace with this:
+            <button class="button button--login" type="button" data-a11y-dialog-show="login-dialog">
+              ...
+            </button>
+          -->
+          <a class="button button--login" href="#login-page-content" data-a11y-dialog-show="login-dialog">
+            <svg class="button__icon button__icon--login" width="16" height="16" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-login"></use>
+            </svg>
+            Login
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main"></main>
+
+    <footer class="page-footer"></footer>
+
+    <!-- The dialog container -->
+    <div
+      class="dialog dialog--cart"
+      id="cart-dialog"
+      aria-labelledby="cart-title"
+      aria-hidden="true"
+    >
+      <!-- The dialog overlay -->
+      <div class="dialog__overlay" data-a11y-dialog-hide></div>
+      <!-- The actual dialog -->
+      <div class="dialog__content cart" role="document">
+        <!-- The close button -->
+        <button class="dialog__close" type="button" data-a11y-dialog-hide aria-label="Close the Cart">
+          &times;
+        </button>
+        <!-- The dialog title -->
+        <h1 class="dialog__title" id="cart-title">Your Cart</h1>
+        <!-- Dialog content -->
+        <div class="cart__inner">
+          <ul class="cart__list" role="list">
+            <li class="cart__item">
+              <h2 class="cart__name">Lorem Ipsum</h2>
+              <p class="cart__price">10.05$</p>
+              <p class="cart__amount">2</p>
+              <div class="cart__actions">
+                <button class="cart__button cart__button--minus" type="button" aria-label="Minus one">-</button>
+                <button class="cart__button cart__button--plus" type="button" aria-label="Plus one">+</button>
+              </div>
+            </li>
+            <li class="cart__item">
+              <h2 class="cart__name">Lorem Ipsum</h2>
+              <p class="cart__price">10.05$</p>
+              <p class="cart__amount">2</p>
+              <div class="cart__actions">
+                <button class="cart__button cart__button--minus" type="button" aria-label="Minus one">-</button>
+                <button class="cart__button cart__button--plus" type="button" aria-label="Plus one">+</button>
+              </div>
+            </li>
+            <li class="cart__item">
+              <h2 class="cart__name">Lorem Ipsum</h2>
+              <p class="cart__price">10.05$</p>
+              <p class="cart__amount">2</p>
+              <div class="cart__actions">
+                <button class="cart__button cart__button--minus" type="button" aria-label="Minus one">-</button>
+                <button class="cart__button cart__button--plus" type="button" aria-label="Plus one">+</button>
+              </div>
+            </li>
+          </ul>
+          <p class="cart__summary">Total: <span class="cart__total">60.3$</span></p>
+          <button class="cart__order" type="button">Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- The dialog container -->
+    <div
+      class="dialog dialog--login"
+      id="login-dialog"
+      aria-labelledby="login-title"
+      aria-hidden="true"
+    >
+      <!-- The dialog overlay -->
+      <div class="dialog__overlay" data-a11y-dialog-hide></div>
+      <!-- The actual dialog -->
+      <div class="dialog__content login" role="document">
+        <!-- The close button -->
+        <button class="dialog__close" type="button" data-a11y-dialog-hide aria-label="Close the Login Form">
+          &times;
+        </button>
+        <!-- The dialog title -->
+        <h1 class="dialog__title" id="login-title">Login to Your Account</h1>
+        <!-- Dialog content -->
+        <div class="login__inner">
+          <ul class="login__list">
+            <li class="login__item">
+              <button class="login__button" type="button">
+                <svg class="login__icon login__icon--facebook" width="24" height="24" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+                Facebook
+              </button>
+            </li>
+            <li class="login__item">
+              <button class="login__button" type="button">
+                <svg class="login__icon login__icon--twitter" width="24" height="24" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+                Twitter
+              </button>
+            </li>
+            <li class="login__item">
+              <button class="login__button" type="button">
+                <svg class="login__icon login__icon--google" width="15" height="22" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-google"></use>
+                </svg>
+                Google
+              </button>
+            </li>
+          </ul>
+          <p class="login__subtitle" id="login-subtitle">Or login with email</p>
+          <form class="login__form" action="#" method="post" aria-labelledby="login-subtitle">
+            <p class="login__control text-form-control">
+              <input class="text-form-control__input" type="email" name="email" id="email-field" value="" placeholder="Email" required>
+              <label class="text-form-control__label" for="email-field">Email</label>
+            </p>
+            <p class="login__control text-form-control">
+              <input class="text-form-control__input" type="password" name="password" id="password-field" value="" placeholder="Password" required>
+              <label class="text-form-control__label" for="password-field">Password</label>
+            </p>
+            <p class="login__control checkbox">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="remember" id="remember-field" checked>
+              <label class="checkbox__label" for="remember-field">Remember</label>
+            </p>
+            <a class="login__forgot" href="#forgot-password-page-content">Forgot password?</a>
+            <button class="login__submit" type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
