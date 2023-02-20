@@ -119,7 +119,128 @@
       </div>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <section class="intro" id="#why">
+        <div class="intro__wrapper wrapper">
+          <div class="intro__inner">
+            <h1 class="intro__title">Claim Best Offer on Fast <i>Food</i> & <i>Restaurants</i></h1>
+            <p class="intro__tagline">More than Faster</p>
+            <p class="intro__description">Our job is to filling your tummy with delicious food and  with fast and free delivery</p>
+            <div class="intro__actions">
+              <button class="button button--started" type="button">Get Started</button>
+              <button class="button button--alt button--video" type="button">Watch Video</button>
+            </div>
+          </div>
+          <p class="intro__illustration">
+            <picture>
+              <source type="image/avif" media="(min-width: 48rem)" srcset="img/intro-dish-desktop@1x.avif 1x, img/intro-dish-desktop@2x.avif 2x" width="670" height="650">
+              <source type="image/avif" srcset="img/intro-dish-mobile@1x.avif 1x, img/intro-dish-mobile@2x.avif 2x" width="335" height="325">
+
+              <source type="image/webp" media="(min-width: 48rem)" srcset="img/intro-dish-desktop@1x.webp 1x, img/intro-dish-desktop@2x.webp 2x" width="670" height="650">
+              <source type="image/webp" srcset="img/intro-dish-mobile@1x.webp 1x, img/intro-dish-mobile@2x.webp 2x" width="335" height="325">
+
+              <source media="(min-width: 48rem)" srcset="img/intro-dish-desktop@1x.jpg 1x, img/intro-dish-desktop@2x.jpg 2x" width="670" height="650">
+              <img class="intro__image" src="img/intro-dish-mobile@1x.jpg" srcset="img/intro-dish-mobile@2x.jpg 2x" width="335" height="325" fetchpriority="high" alt="Fresh vegetable salad with feta cheese and herbs.">
+            </picture>
+          </p>
+          <article class="intro__customers customers">
+            <h2 class="customers__title">
+              <a class="customers__link" href="#reviewers-page-content">
+                Our Happy Customer
+              </a>
+            </h2>
+            <p class="customers__rating">
+              <span class="customers__star">
+                <img class="customers__icon" src="img/icon-filled-star.svg" width="12" height="12" alt="Star.">
+              </span>
+              <span class="visually-hidden">Our rating:</span>
+              <span class="customers__value">4.8</span>
+              <span class="customers__amount">(12.5k Review)</span>
+            </p>
+            <p class="customers__illustration">
+              <span class="customers__avatar">
+                <picture>
+                  <source type="image/avif" srcset="img/avatar-customer-1@1x.avif 1x, img/avatar-customer-1@2x.avif 2x" width="64" height="64">
+
+                  <source type="image/webp" srcset="img/avatar-customer-1@1x.webp 1x, img/avatar-customer-1@2x.webp 2x" width="64" height="64">
+
+                  <img class="customers__image" src="img/avatar-customer-1@1x.png" srcset="img/avatar-customer-1@2x.png 2x" width="64" height="64" alt="Avatars of our customers.">
+                </picture>
+              </span>
+              <span class="customers__avatar">
+                <picture>
+                  <source type="image/avif" srcset="img/avatar-customer-2@1x.avif 1x, img/avatar-customer-2@2x.avif 2x" width="64" height="64">
+
+                  <source type="image/webp" srcset="img/avatar-customer-2@1x.webp 1x, img/avatar-customer-2@2x.webp 2x" width="64" height="64">
+
+                  <img class="customers__image" src="img/avatar-customer-2@1x.png" srcset="img/avatar-customer-2@2x.png 2x" width="64" height="64" alt="">
+                </picture>
+              </span>
+              <span class="customers__avatar">
+                <picture>
+                  <source type="image/avif" srcset="img/avatar-customer-3@1x.avif 1x, img/avatar-customer-3@2x.avif 2x" width="64" height="64">
+
+                  <source type="image/webp" srcset="img/avatar-customer-3@1x.webp 1x, img/avatar-customer-3@2x.webp 2x" width="64" height="64">
+
+                  <img class="customers__image" src="img/avatar-customer-3@1x.png" srcset="img/avatar-customer-3@2x.png 2x" width="64" height="64" alt="">
+                </picture>
+              </span>
+            </p>
+          </article>
+          <article class="intro__courier courier">
+            <div class="courier__info">
+              <h2 class="courier__name">Richard Watson</h2>
+              <p class="courier__description">Food Courier</p>
+            </div>
+            <p class="courier__avatar">
+              <picture>
+                <source type="image/avif" srcset="img/avatar-courier@1x.avif 1x, img/avatar-courier@2x.avif 2x" width="47" height="47">
+
+                <source type="image/webp" srcset="img/avatar-courier@1x.webp 1x, img/avatar-courier@2x.webp 2x" width="47" height="47">
+
+                <img class="courier__image" src="img/avatar-courier@1x.png" srcset="img/avatar-courier@2x.png 2x" width="47" height="47" alt="Avatar.">
+              </picture>
+            </p>
+            <button class="courier__button button button--call" type="button" aria-label="Call now">
+              <svg class="button__icon button__icon--call" width="13" height="18" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </button>
+          </article>
+          <article class="intro__product popular-product">
+            <div class="popular-product__info">
+              <h2 class="popular-product__title">
+                <a class="popular-product__link" href="#italian-pizza-page-content">
+                  Italian Pizza
+                </a>
+              </h2>
+              <p class="popular-product__rating">
+                <span class="visually-hidden">Rating: </span>
+                <meter class="popular-product__stars" max="5" value="4">
+                  <img class="popular-product__icon" src="img/icon-filled-star.svg" width="12" height="12" alt="4 out of 5">
+                  <img class="popular-product__icon" src="img/icon-filled-star.svg" width="12" height="12" alt="">
+                  <img class="popular-product__icon" src="img/icon-filled-star.svg" width="12" height="12" alt="">
+                  <img class="popular-product__icon" src="img/icon-filled-star.svg" width="12" height="12" alt="">
+                  <img class="popular-product__icon" src="img/icon-empty-star.svg" width="12" height="12" alt="">
+                </meter>
+              </p>
+              <p class="popular-product__price">
+                <span class="popular-product__currency">$</span> 7.49
+              </p>
+            </div>
+            <p class="popular-product__illustration">
+              <picture>
+                <source type="image/avif" srcset="img/product-small-italian-pizza@1x.avif 1x, img/product-small-italian-pizza@2x.avif 2x" width="113" height="97">
+
+                <source type="image/webp" srcset="img/product-small-italian-pizza@1x.webp 1x, img/product-small-italian-pizza@2x.webp 2x" width="113" height="97">
+
+                <img class="popular-product__image" src="img/product-small-italian-pizza@1x.png" srcset="img/product-small-italian-pizza@2x.png 2x" width="113" height="97" alt="Italian pizza on orange background.">
+              </picture>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <footer class="page-footer"></footer>
 
@@ -196,7 +317,7 @@
         <h1 class="dialog__title" id="login-title">Login to Your Account</h1>
         <!-- Dialog content -->
         <div class="login__inner">
-          <ul class="login__list">
+          <ul class="login__list" role="list">
             <li class="login__item">
               <button class="login__button" type="button">
                 <svg class="login__icon login__icon--facebook" width="24" height="24" aria-hidden="true" focusable="false">
