@@ -268,6 +268,859 @@
         </div>
       </section>
 
+      <section class="menu tabs" id="menu">
+        <div class="menu__wrapper wrapper">
+          <h2 class="menu__title" id="menu-tablist-title">Our menu</h2>
+          <p class="menu__subtitle">Menu That Always Makes You Fall In Love</p>
+          <div class="tabs__tablist" role="tablist" aria-labelledby="menu-tablist-title">
+            <button class="button button--alt button--tab button--burger"
+                    id="menu-tab-1"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menu-tabpanel-1"
+                    tabindex="-1">
+              <span class="button__text">Burger</span>
+            </button>
+            <button class="button button--alt button--tab button--pizza"
+                    id="menu-tab-2"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="menu-tabpanel-2">
+              <span class="button__text">Pizza</span>
+            </button>
+            <button class="button button--alt button--tab button--cupcake"
+                    id="menu-tab-3"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menu-tabpanel-3"
+                    tabindex="-1">
+              <span class="button__text">Cupcake</span>
+            </button>
+            <button class="button button--alt button--tab button--ramen"
+                    id="menu-tab-4"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menu-tabpanel-4"
+                    tabindex="-1">
+              <span class="button__text">Ramen</span>
+            </button>
+            <button class="button button--alt button--tab button--ice-cream"
+                    id="menu-tab-5"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menu-tabpanel-5"
+                    tabindex="-1">
+              <span class="button__text">Ice Cream</span>
+            </button>
+          </div>
+
+          <div class="tabs__tabpanel tabs__tabpanel--hidden"
+               id="menu-tabpanel-1"
+               role="tabpanel"
+               aria-labelledby="menu-tab-1">
+            <section class="carousel" aria-roledescription="carousel" aria-label="Burger">
+              <div class="carousel__inner">
+                <div class="carousel__controls">
+                  <button class="carousel__prev button button--carousel"
+                          type="button"
+                          aria-controls="burger-menu-carousel-items"
+                          aria-label="Previous Slide">
+                    <svg class="button__icon button__icon--prev" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="carousel__next button button--carousel"
+                          type="button"
+                          aria-controls="burger-menu-carousel-items"
+                          aria-label="Next Slide">
+                    <svg class="button__icon button__icon--next" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="carousel__items" id="burger-menu-carousel-items" aria-live="polite">
+                  <div class="carousel__slide carousel__slide--active product" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Burger 1</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-burger-1-desktop@1x.avif 1x, img/product-burger-1-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-burger-1-mobile@1x.avif 1x, img/product-burger-1-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-burger-1-desktop@1x.webp 1x, img/product-burger-1-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-burger-1-mobile@1x.webp 1x, img/product-burger-1-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-burger-1-desktop@1x.jpg 1x, img/product-burger-1-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-burger-1-mobile@1x.jpg" srcset="img/product-burger-1-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Burger 1.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Burger 2</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-burger-2-desktop@1x.avif 1x, img/product-burger-2-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-burger-2-mobile@1x.avif 1x, img/product-burger-2-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-burger-2-desktop@1x.webp 1x, img/product-burger-2-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-burger-2-mobile@1x.webp 1x, img/product-burger-2-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-burger-2-desktop@1x.jpg 1x, img/product-burger-2-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-burger-2-mobile@1x.jpg" srcset="img/product-burger-2-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Burger 2.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Burger 3</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-burger-3-desktop@1x.avif 1x, img/product-burger-3-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-burger-3-mobile@1x.avif 1x, img/product-burger-3-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-burger-3-desktop@1x.webp 1x, img/product-burger-3-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-burger-3-mobile@1x.webp 1x, img/product-burger-3-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-burger-3-desktop@1x.jpg 1x, img/product-burger-3-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-burger-3-mobile@1x.jpg" srcset="img/product-burger-3-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Burger 3.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Burger 4</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-burger-4-desktop@1x.avif 1x, img/product-burger-4-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-burger-4-mobile@1x.avif 1x, img/product-burger-4-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-burger-4-desktop@1x.webp 1x, img/product-burger-4-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-burger-4-mobile@1x.webp 1x, img/product-burger-4-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-burger-4-desktop@1x.jpg 1x, img/product-burger-4-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-burger-4-mobile@1x.jpg" srcset="img/product-burger-4-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Burger 4.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Burger 5</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-burger-5-desktop@1x.avif 1x, img/product-burger-5-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-burger-5-mobile@1x.avif 1x, img/product-burger-5-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-burger-5-desktop@1x.webp 1x, img/product-burger-5-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-burger-5-mobile@1x.webp 1x, img/product-burger-5-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-burger-5-desktop@1x.jpg 1x, img/product-burger-5-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-burger-5-mobile@1x.jpg" srcset="img/product-burger-5-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Burger 5.">
+                      </picture>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__tabpanel"
+               id="menu-tabpanel-2"
+               role="tabpanel"
+               aria-labelledby="menu-tab-2">
+            <section class="carousel" aria-roledescription="carousel" aria-label="Pizza">
+              <div class="carousel__inner">
+                <div class="carousel__controls">
+                  <button class="carousel__prev button button--carousel"
+                          type="button"
+                          aria-controls="pizza-menu-carousel-items"
+                          aria-label="Previous Slide">
+                    <svg class="button__icon button__icon--prev" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="carousel__next button button--carousel"
+                          type="button"
+                          aria-controls="pizza-menu-carousel-items"
+                          aria-label="Next Slide">
+                    <svg class="button__icon button__icon--next" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="carousel__items" id="pizza-menu-carousel-items" aria-live="polite">
+                  <div class="carousel__slide carousel__slide--active product" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Pizza 1</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-pizza-1-desktop@1x.avif 1x, img/product-pizza-1-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-pizza-1-mobile@1x.avif 1x, img/product-pizza-1-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-pizza-1-desktop@1x.webp 1x, img/product-pizza-1-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-pizza-1-mobile@1x.webp 1x, img/product-pizza-1-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-pizza-1-desktop@1x.jpg 1x, img/product-pizza-1-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-pizza-1-mobile@1x.jpg" srcset="img/product-pizza-1-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Pizza 1.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Pizza 2</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-pizza-2-desktop@1x.avif 1x, img/product-pizza-2-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-pizza-2-mobile@1x.avif 1x, img/product-pizza-2-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-pizza-2-desktop@1x.webp 1x, img/product-pizza-2-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-pizza-2-mobile@1x.webp 1x, img/product-pizza-2-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-pizza-2-desktop@1x.jpg 1x, img/product-pizza-2-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-pizza-2-mobile@1x.jpg" srcset="img/product-pizza-2-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Pizza 2.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Pizza 3</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-pizza-3-desktop@1x.avif 1x, img/product-pizza-3-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-pizza-3-mobile@1x.avif 1x, img/product-pizza-3-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-pizza-3-desktop@1x.webp 1x, img/product-pizza-3-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-pizza-3-mobile@1x.webp 1x, img/product-pizza-3-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-pizza-3-desktop@1x.jpg 1x, img/product-pizza-3-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-pizza-3-mobile@1x.jpg" srcset="img/product-pizza-3-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Pizza 3.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Pizza 4</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-pizza-4-desktop@1x.avif 1x, img/product-pizza-4-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-pizza-4-mobile@1x.avif 1x, img/product-pizza-4-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-pizza-4-desktop@1x.webp 1x, img/product-pizza-4-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-pizza-4-mobile@1x.webp 1x, img/product-pizza-4-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-pizza-4-desktop@1x.jpg 1x, img/product-pizza-4-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-pizza-4-mobile@1x.jpg" srcset="img/product-pizza-4-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Pizza 4.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Pizza 5</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-pizza-5-desktop@1x.avif 1x, img/product-pizza-5-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-pizza-5-mobile@1x.avif 1x, img/product-pizza-5-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-pizza-5-desktop@1x.webp 1x, img/product-pizza-5-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-pizza-5-mobile@1x.webp 1x, img/product-pizza-5-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-pizza-5-desktop@1x.jpg 1x, img/product-pizza-5-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-pizza-5-mobile@1x.jpg" srcset="img/product-pizza-5-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Pizza 5.">
+                      </picture>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__tabpanel tabs__tabpanel--hidden"
+               id="menu-tabpanel-3"
+               role="tabpanel"
+               aria-labelledby="menu-tab-3">
+            <section class="carousel" aria-roledescription="carousel" aria-label="Cupcake">
+              <div class="carousel__inner">
+                <div class="carousel__controls">
+                  <button class="carousel__prev button button--carousel"
+                          type="button"
+                          aria-controls="cupcake-menu-carousel-items"
+                          aria-label="Previous Slide">
+                    <svg class="button__icon button__icon--prev" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="carousel__next button button--carousel"
+                          type="button"
+                          aria-controls="cupcake-menu-carousel-items"
+                          aria-label="Next Slide">
+                    <svg class="button__icon button__icon--next" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="carousel__items" id="cupcake-menu-carousel-items" aria-live="polite">
+                  <div class="carousel__slide carousel__slide--active product" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Cupcake 1</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-cupcake-1-desktop@1x.avif 1x, img/product-cupcake-1-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-cupcake-1-mobile@1x.avif 1x, img/product-cupcake-1-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-cupcake-1-desktop@1x.webp 1x, img/product-cupcake-1-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-cupcake-1-mobile@1x.webp 1x, img/product-cupcake-1-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-cupcake-1-desktop@1x.jpg 1x, img/product-cupcake-1-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-cupcake-1-mobile@1x.jpg" srcset="img/product-cupcake-1-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Cupcake 1.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Cupcake 2</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-cupcake-2-desktop@1x.avif 1x, img/product-cupcake-2-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-cupcake-2-mobile@1x.avif 1x, img/product-cupcake-2-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-cupcake-2-desktop@1x.webp 1x, img/product-cupcake-2-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-cupcake-2-mobile@1x.webp 1x, img/product-cupcake-2-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-cupcake-2-desktop@1x.jpg 1x, img/product-cupcake-2-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-cupcake-2-mobile@1x.jpg" srcset="img/product-cupcake-2-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Cupcake 2.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Cupcake 3</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-cupcake-3-desktop@1x.avif 1x, img/product-cupcake-3-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-cupcake-3-mobile@1x.avif 1x, img/product-cupcake-3-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-cupcake-3-desktop@1x.webp 1x, img/product-cupcake-3-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-cupcake-3-mobile@1x.webp 1x, img/product-cupcake-3-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-cupcake-3-desktop@1x.jpg 1x, img/product-cupcake-3-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-cupcake-3-mobile@1x.jpg" srcset="img/product-cupcake-3-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Cupcake 3.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Cupcake 4</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-cupcake-4-desktop@1x.avif 1x, img/product-cupcake-4-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-cupcake-4-mobile@1x.avif 1x, img/product-cupcake-4-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-cupcake-4-desktop@1x.webp 1x, img/product-cupcake-4-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-cupcake-4-mobile@1x.webp 1x, img/product-cupcake-4-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-cupcake-4-desktop@1x.jpg 1x, img/product-cupcake-4-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-cupcake-4-mobile@1x.jpg" srcset="img/product-cupcake-4-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Cupcake 4.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Cupcake 5</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-cupcake-5-desktop@1x.avif 1x, img/product-cupcake-5-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-cupcake-5-mobile@1x.avif 1x, img/product-cupcake-5-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-cupcake-5-desktop@1x.webp 1x, img/product-cupcake-5-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-cupcake-5-mobile@1x.webp 1x, img/product-cupcake-5-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-cupcake-5-desktop@1x.jpg 1x, img/product-cupcake-5-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-cupcake-5-mobile@1x.jpg" srcset="img/product-cupcake-5-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Cupcake 5.">
+                      </picture>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__tabpanel tabs__tabpanel--hidden"
+               id="menu-tabpanel-4"
+               role="tabpanel"
+               aria-labelledby="menu-tab-4">
+            <section class="carousel" aria-roledescription="carousel" aria-label="Ramen">
+              <div class="carousel__inner">
+                <div class="carousel__controls">
+                  <button class="carousel__prev button button--carousel"
+                          type="button"
+                          aria-controls="ramen-menu-carousel-items"
+                          aria-label="Previous Slide">
+                    <svg class="button__icon button__icon--prev" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="carousel__next button button--carousel"
+                          type="button"
+                          aria-controls="ramen-menu-carousel-items"
+                          aria-label="Next Slide">
+                    <svg class="button__icon button__icon--next" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="carousel__items" id="ramen-menu-carousel-items" aria-live="polite">
+                  <div class="carousel__slide carousel__slide--active product" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ramen 1</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ramen-1-desktop@1x.avif 1x, img/product-ramen-1-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ramen-1-mobile@1x.avif 1x, img/product-ramen-1-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ramen-1-desktop@1x.webp 1x, img/product-ramen-1-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ramen-1-mobile@1x.webp 1x, img/product-ramen-1-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ramen-1-desktop@1x.jpg 1x, img/product-ramen-1-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ramen-1-mobile@1x.jpg" srcset="img/product-ramen-1-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ramen 1.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ramen 2</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ramen-2-desktop@1x.avif 1x, img/product-ramen-2-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ramen-2-mobile@1x.avif 1x, img/product-ramen-2-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ramen-2-desktop@1x.webp 1x, img/product-ramen-2-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ramen-2-mobile@1x.webp 1x, img/product-ramen-2-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ramen-2-desktop@1x.jpg 1x, img/product-ramen-2-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ramen-2-mobile@1x.jpg" srcset="img/product-ramen-2-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ramen 2.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ramen 3</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ramen-3-desktop@1x.avif 1x, img/product-ramen-3-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ramen-3-mobile@1x.avif 1x, img/product-ramen-3-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ramen-3-desktop@1x.webp 1x, img/product-ramen-3-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ramen-3-mobile@1x.webp 1x, img/product-ramen-3-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ramen-3-desktop@1x.jpg 1x, img/product-ramen-3-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ramen-3-mobile@1x.jpg" srcset="img/product-ramen-3-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ramen 3.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ramen 4</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ramen-4-desktop@1x.avif 1x, img/product-ramen-4-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ramen-4-mobile@1x.avif 1x, img/product-ramen-4-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ramen-4-desktop@1x.webp 1x, img/product-ramen-4-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ramen-4-mobile@1x.webp 1x, img/product-ramen-4-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ramen-4-desktop@1x.jpg 1x, img/product-ramen-4-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ramen-4-mobile@1x.jpg" srcset="img/product-ramen-4-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ramen 4.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ramen 5</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ramen-5-desktop@1x.avif 1x, img/product-ramen-5-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ramen-5-mobile@1x.avif 1x, img/product-ramen-5-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ramen-5-desktop@1x.webp 1x, img/product-ramen-5-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ramen-5-mobile@1x.webp 1x, img/product-ramen-5-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ramen-5-desktop@1x.jpg 1x, img/product-ramen-5-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ramen-5-mobile@1x.jpg" srcset="img/product-ramen-5-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ramen 5.">
+                      </picture>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__tabpanel tabs__tabpanel--hidden"
+               id="menu-tabpanel-5"
+               role="tabpanel"
+               aria-labelledby="menu-tab-5">
+            <section class="carousel" aria-roledescription="carousel" aria-label="Ice Cream">
+              <div class="carousel__inner">
+                <div class="carousel__controls">
+                  <button class="carousel__prev button button--carousel"
+                          type="button"
+                          aria-controls="ice-cream-menu-carousel-items"
+                          aria-label="Previous Slide">
+                    <svg class="button__icon button__icon--prev" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="carousel__next button button--carousel"
+                          type="button"
+                          aria-controls="ice-cream-menu-carousel-items"
+                          aria-label="Next Slide">
+                    <svg class="button__icon button__icon--next" width="24" height="24" aria-hidden="true" focusable="false">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="carousel__items" id="ice-cream-menu-carousel-items" aria-live="polite">
+                  <div class="carousel__slide carousel__slide--active product" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ice Cream 1</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ice-cream-1-desktop@1x.avif 1x, img/product-ice-cream-1-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ice-cream-1-mobile@1x.avif 1x, img/product-ice-cream-1-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ice-cream-1-desktop@1x.webp 1x, img/product-ice-cream-1-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ice-cream-1-mobile@1x.webp 1x, img/product-ice-cream-1-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ice-cream-1-desktop@1x.jpg 1x, img/product-ice-cream-1-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ice-cream-1-mobile@1x.jpg" srcset="img/product-ice-cream-1-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ice Cream 1.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ice Cream 2</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ice-cream-2-desktop@1x.avif 1x, img/product-ice-cream-2-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ice-cream-2-mobile@1x.avif 1x, img/product-ice-cream-2-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ice-cream-2-desktop@1x.webp 1x, img/product-ice-cream-2-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ice-cream-2-mobile@1x.webp 1x, img/product-ice-cream-2-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ice-cream-2-desktop@1x.jpg 1x, img/product-ice-cream-2-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ice-cream-2-mobile@1x.jpg" srcset="img/product-ice-cream-2-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ice Cream 2.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ice Cream 3</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ice-cream-3-desktop@1x.avif 1x, img/product-ice-cream-3-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ice-cream-3-mobile@1x.avif 1x, img/product-ice-cream-3-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ice-cream-3-desktop@1x.webp 1x, img/product-ice-cream-3-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ice-cream-3-mobile@1x.webp 1x, img/product-ice-cream-3-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ice-cream-3-desktop@1x.jpg 1x, img/product-ice-cream-3-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ice-cream-3-mobile@1x.jpg" srcset="img/product-ice-cream-3-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ice Cream 3.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ice Cream 4</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 6.59</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ice-cream-4-desktop@1x.avif 1x, img/product-ice-cream-4-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ice-cream-4-mobile@1x.avif 1x, img/product-ice-cream-4-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ice-cream-4-desktop@1x.webp 1x, img/product-ice-cream-4-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ice-cream-4-mobile@1x.webp 1x, img/product-ice-cream-4-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ice-cream-4-desktop@1x.jpg 1x, img/product-ice-cream-4-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ice-cream-4-mobile@1x.jpg" srcset="img/product-ice-cream-4-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ice Cream 4.">
+                      </picture>
+                    </p>
+                  </div>
+                  <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                    <div class="product__caption">
+                      <h3 class="product__title">
+                        <a class="product__link" href="#">Ice Cream 5</a>
+                      </h3>
+                      <p class="product__price"><span class="product__currency">$</span> 7.49</p>
+                      <button class="product__button" type="button">
+                        Order Now
+                        <svg class="product__arrow-icon" width="24" height="24" aria-hidden="true" focusable="false">
+                          <use xlink:href="#icon-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="product__illustration">
+                      <picture>
+                        <source type="image/avif" media="(min-width: 48rem)" srcset="img/product-ice-cream-5-desktop@1x.avif 1x, img/product-ice-cream-5-desktop@2x.avif 2x" width="436" height="508">
+                        <source type="image/avif" srcset="img/product-ice-cream-5-mobile@1x.avif 1x, img/product-ice-cream-5-mobile@2x.avif 2x" width="218" height="254">
+
+                        <source type="image/webp" media="(min-width: 48rem)" srcset="img/product-ice-cream-5-desktop@1x.webp 1x, img/product-ice-cream-5-desktop@2x.webp 2x" width="436" height="508">
+                        <source type="image/webp" srcset="img/product-ice-cream-5-mobile@1x.webp 1x, img/product-ice-cream-5-mobile@2x.webp 2x" width="218" height="254">
+
+                        <source media="(min-width: 48rem)" srcset="img/product-ice-cream-5-desktop@1x.jpg 1x, img/product-ice-cream-5-desktop@2x.jpg 2x" width="436" height="508">
+                        <img class="product__image" src="img/product-ice-cream-5-mobile@1x.jpg" srcset="img/product-ice-cream-5-mobile@2x.jpg 2x" width="218" height="254" loading="lazy" alt="Ice Cream 5.">
+                      </picture>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
       <section class="reviews">
         <div class="reviews__wrapper wrapper">
           <div class="reviews__inner">
