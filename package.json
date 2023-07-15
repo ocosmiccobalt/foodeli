@@ -21,6 +21,8 @@
     "*.json",
     "*.js",
     "source/*.html",
+    "source/*.svg",
+    "source/*.webmanifest",
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
