@@ -13,9 +13,10 @@
     "start": "gulp"
   },
   "browserslist": [
+    "> 0.5%",
     "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "Firefox ESR",
+    "not dead"
   ],
   "editorconfig-cli": [
     "*.json",
