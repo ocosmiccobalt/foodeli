@@ -1,6 +1,6 @@
 import gulp from "gulp";
 import gulpsass from "gulp-sass";
-import dartsass from "sass";
+import * as dartsass from "sass";
 const sass = gulpsass(dartsass);
 import plumber from "gulp-plumber";
 import postcss from "gulp-postcss";
