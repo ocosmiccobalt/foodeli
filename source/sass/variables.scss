@@ -1,0 +1,27 @@
+/* Viewport */
+$tablet-width: 48rem;
+$desktop-width: 80rem;
+
+/* Colors */
+$white: hsl(0, 0%, 100%);
+$red: hsl(350, 100%, 46%);
+$dark-blue: hsl(209, 93%, 6%);
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 20%);
+$light-gray: hsl(0, 0%, 51%);
+$super-light-gray: hsl(0, 0%, 88%);
+$golden: hsl(45, 86%, 62%);
+$rose: hsl(21, 94%, 93%);
+
+$body-bg-color: $white;
+$primary-color: $red;
+$extra-heavy-text-color: $dark-blue;
+$heavy-text-color: $black;
+$text-color: $gray;
+$faint-text-color: $light-gray;
+$alt-bg-color: $super-light-gray;
+
+/* Fonts */
+$poppins-font-family: "Poppins", "Poppins fallback", "Verdana", sans-serif;
+$rubik-font-family: "Rubik", "Rubik fallback", "Trebuchet MS", sans-serif;
+$lobster-two-font-family: "Lobster Two", "Lobster Two fallback", cursive;
