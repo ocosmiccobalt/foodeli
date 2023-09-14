@@ -18,10 +18,6 @@ const replaceAnchorsWithButtons = (selector) => {
 
     setCopiedAttributes(anchor, button);
 
-    // Nope! Do it in the Nav module!
-    // if (button.hasAttribute(`aria-controls`)) {
-    //   button.setAttribute(`aria-expanded`, false);
-    // }
     button.type = `button`;
     button.innerHTML = anchor.innerHTML;
     anchor.parentElement.replaceChild(button, anchor);
