@@ -1,0 +1,107 @@
+@use "variables" as *;
+
+.main-nav {
+  position: relative;
+
+  padding-top: 4.313em;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  width: 2.813em;
+  height: 2.813em;
+  margin: 0.75em;
+  padding: 0;
+
+  background-color: $body-bg-color;
+  border: none;
+
+  cursor: pointer;
+  transition: 220ms ease-in-out;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 1.25em;
+    height: 0.125em;
+    margin: auto;
+
+    background-color: $heavy-text-color;
+    box-shadow: 0 -0.5em 0 0 $heavy-text-color, 0 0.5em 0 0 $heavy-text-color;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    background-color: $primary-color;
+    box-shadow: 0 -0.5em 0 0 $primary-color, 0 0.5em 0 0 $primary-color;
+  }
+
+  &:focus {
+    outline: 0.2em solid $outline-color;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 0.2em solid $outline-color;
+  }
+}
+
+.main-nav__toggle--open {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+
+    width: 0.125em;
+    height: 1.875em;
+    margin: 0;
+
+    background-color: $heavy-text-color;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before,
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-color: $primary-color;
+    box-shadow: none;
+  }
+}
+
+.main-nav__toggle--nojs {
+  display: none;
+}
+
+// @media (min-width: $tablet-width) {}
+
+// @media (min-width: $desktop-width) {}
