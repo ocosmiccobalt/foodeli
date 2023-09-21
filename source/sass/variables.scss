@@ -10,8 +10,8 @@ $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 20%);
 $light-gray: hsl(0, 0%, 51%);
 $super-light-gray: hsl(0, 0%, 88%);
-$golden: hsl(45, 86%, 62%);
 $rose: hsl(21, 94%, 93%);
+$golden: hsl(45, 86%, 62%);
 
 $body-bg-color: $white;
 $primary-color: $red;
@@ -20,6 +20,8 @@ $heavy-text-color: $black;
 $text-color: $gray;
 $faint-text-color: $light-gray;
 $alt-bg-color: $super-light-gray;
+$accent-bg-color: $rose;
+$outline-color: $golden;
 
 /* Fonts */
 $poppins-font-family: "Poppins", "Poppins fallback", "Verdana", sans-serif;
