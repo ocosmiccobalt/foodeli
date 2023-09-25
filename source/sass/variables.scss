@@ -8,8 +8,8 @@ $red: hsl(350, 100%, 46%);
 $dark-blue: hsl(209, 93%, 6%);
 $black: hsl(0, 0%, 0%);
 $gray: hsl(0, 0%, 20%);
-$light-gray: hsl(0, 0%, 51%);
-$super-light-gray: hsl(0, 0%, 88%);
+$light-gray-51: hsl(0, 0%, 51%);
+$light-gray-88: hsl(0, 0%, 88%);
 $rose: hsl(21, 94%, 93%);
 $golden: hsl(45, 86%, 62%);
 
@@ -18,8 +18,8 @@ $primary-color: $red;
 $extra-heavy-text-color: $dark-blue;
 $heavy-text-color: $black;
 $text-color: $gray;
-$faint-text-color: $light-gray;
-$alt-bg-color: $super-light-gray;
+$faint-text-color: $light-gray-51;
+$alt-bg-color: $light-gray-88;
 $accent-bg-color: $rose;
 $outline-color: $golden;
 
