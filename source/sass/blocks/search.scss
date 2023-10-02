@@ -14,9 +14,9 @@
   flex-basis: auto;
 
   display: block;
-  width: 3.125em;
-  height: 3.125em;
-  padding: 0.875em;
+  width: 3.625em;
+  height: 3.625em;
+  padding: 1.125em;
 
   color: inherit;
 
@@ -40,12 +40,13 @@
   right: 0;
 
   display: block;
-  width: 16em;
-  height: 3.125em;
-  padding: 0.75em;
-  padding-right: 3.625em;
+  width: 17.5em;
+  height: 3.625em;
+  padding: 0.875em 0.75em;
+  padding-right: 4em;
 
   font: inherit;
+  line-height: inherit;
   color: inherit;
 
   background-color: $body-bg-color;
@@ -105,9 +106,9 @@
   right: 0;
 
   display: block;
-  width: 3.125em;
-  height: 3.125em;
-  padding: 0.875em;
+  width: 3.625em;
+  height: 3.625em;
+  padding: 1.125em;
 
   font-size: inherit;
   color: inherit;
