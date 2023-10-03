@@ -5,24 +5,28 @@ class Nav {
     this.DROPDOWN_BUTTON_CLASS = `dropdown__title`;
     this.DROPDOWN_MENU_CLASS = `dropdown__list`;
     this.nav = navElem;
-    this.button = this.nav.querySelector(`.${this.BUTTON_CLASS}`);
-    this.menu = this.nav.querySelector(`.${this.MENU_CLASS}`);
-    this.buttons = [this.button];
-    this.menus = [this.menu];
+
+    this.buttons = [
+      this.nav.querySelector(`.${this.BUTTON_CLASS}`)
+    ];
+
+    this.menus = [
+      this.nav.querySelector(`.${this.MENU_CLASS}`)
+    ];
+
+    const dropdownButtons = this.nav.querySelectorAll(
+      `.${this.DROPDOWN_BUTTON_CLASS}`
+    );
+
+    dropdownButtons.forEach((btn) => {
+      this.buttons.push(btn);
+      this.menus.push(btn.nextElementSibling);
+    });
   }
 
   init() {
-    if (this.button !== null && this.menu !== null) {
-      const dropdownButtons = this.menu.querySelectorAll(
-        `.${this.DROPDOWN_BUTTON_CLASS}`
-      );
-
-      dropdownButtons.forEach((btn) => {
-        this.buttons.push(btn);
-        this.menus.push(btn.nextElementSibling);
-      });
-
-      this.buttons.forEach((btn, i) => {
+    this.buttons.forEach((btn, i) => {
+      if (btn !== null && this.menus[i] !== null) {
         btn.classList.remove(
           `${i === 0 ? this.BUTTON_CLASS : this.DROPDOWN_BUTTON_CLASS}--nojs`
         );
@@ -31,8 +35,8 @@ class Nav {
         );
         btn.setAttribute(`aria-expanded`, false);
         btn.addEventListener(`click`, this.onButtonClick.bind(this));
-      });
-    }
+      }
+    });
   }
 
   onButtonClick(evt) {
