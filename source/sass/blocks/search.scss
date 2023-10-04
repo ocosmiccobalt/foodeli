@@ -3,8 +3,10 @@
 .search {
   position: relative;
 
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
 
   color: $heavy-text-color;
 }
@@ -40,9 +42,10 @@
   right: 0;
 
   display: block;
-  width: 17.5em;
+  min-width: 17.5em;
+  width: 100%;
   height: 3.625em;
-  padding: 0.875em 0.75em;
+  padding: 0.875em 0.5em;
   padding-right: 4em;
 
   font: inherit;
@@ -168,8 +171,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .search {
+    display: inline-flex;
+    justify-content: flex-start;
+
+    width: auto;
+  }
+
   .search__input {
     width: 22em;
+    padding-left: 0.75em;
 
     .search--notempty & {
       z-index: 10;
