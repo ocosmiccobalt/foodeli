@@ -3,18 +3,18 @@
 .main-nav {
   position: relative;
 
-  padding-top: 4.313em;
+  padding-top: 4.125em;
 }
 
 .main-nav__toggle {
   position: absolute;
-  z-index: 10;
+  z-index: 15;
   top: 0;
   right: 0;
 
-  width: 2.813em;
-  height: 2.813em;
-  margin: 0.75em;
+  width: 3.125em;
+  height: 3.125em;
+  margin: 0.5em;
   padding: 0;
 
   background-color: $body-bg-color;
@@ -102,6 +102,22 @@
   display: none;
 }
 
-// @media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+  .main-nav {
+    position: static;
 
-// @media (min-width: $desktop-width) {}
+    width: 100%;
+    padding: 1em 2.6%;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+    padding: 0;
+  }
+}
