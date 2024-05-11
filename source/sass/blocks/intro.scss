@@ -199,10 +199,24 @@
 
 @media (min-width: $desktop-width) {
   .intro__wrapper {
-    position: static;
-
     padding: 2.688em 0;
     padding-top: 4.25em;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: 15;
+      top: 6.25em;
+      right: 7.625em;
+
+      width: 1.875em;
+      height: 1.875em;
+
+      background-image: url("../img/decor-fire.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .intro__inner {
@@ -249,10 +263,47 @@
   }
 
   .intro__illustration {
+    position: relative;
+
     width: 52.34%;
     margin-top: 2.813em;
     margin-right: auto;
     padding: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -0.438em;
+      left: 1.313em;
+
+      width: 5.625em;
+      height: 5.313em;
+
+      background-color: $outline-color;
+      background-image: url("../img/decor-time.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 4.063em 4.063em;
+      border-radius: 1.25em;
+
+      transform: rotate(-20deg);
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 5em;
+      right: 1em;
+
+      width: 5.125em;
+      height: 9.313em;
+
+      background-image: url("../img/decor-send-with-trace.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .intro__courier {
