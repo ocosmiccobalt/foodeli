@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @mixin reset-list() {
   padding: 0;
   list-style: none;
@@ -28,4 +30,47 @@
       url("../img/#{$name}@1x.#{$raster-type}") 1x
     );
   /* stylelint-enable declaration-block-no-duplicate-properties, value-no-vendor-prefix */
+}
+
+@mixin section-wrapper-padding() {
+  padding: 0 0.75rem;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 2.6%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0.938rem;
+  }
+}
+
+@mixin section-title() {
+  font-family: $poppins-font-family;
+  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    max-width: 34rem;
+  }
+}
+
+@mixin section-subtitle() {
+  font-family: $rubik-font-family;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.33;
+  text-transform: capitalize;
+  color: $extra-heavy-text-color;
+
+  @media (min-width: $tablet-width) {
+    max-width: 34rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 2.813em;
+  }
 }
