@@ -258,6 +258,8 @@
   }
 
   .intro__actions {
+    position: static;
+
     max-width: 29.813em;
     width: 29.813em;
   }
@@ -307,7 +309,9 @@
   }
 
   .intro__courier {
-    position: static;
+    position: relative;
+    top: auto;
+    left: auto;
 
     order: 4;
 
@@ -324,6 +328,8 @@
   }
 
   .intro__product {
+    position: relative;
+
     align-self: flex-start;
     order: 5;
 
